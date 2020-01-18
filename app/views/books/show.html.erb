@@ -1,0 +1,25 @@
+
+<div class="successfully">
+  <% if flash[:notice] %>
+  <%= flash[:notice]%>
+  <% end %>
+</div>
+
+
+<div class="successfully">
+  <% if flash[:hoge] %>
+  <%= flash[:hoge] %>
+  <% end %>
+</div>
+
+
+
+<body>
+<p><strong>Title: </strong><%= @book.title %></p>
+<p><strong>Body: </strong><%= @book.body %></p>
+
+<%= link_to "Edit", edit_book_path(@book.id) %>
+|
+<a href="/books">Back</a>
+
+</body>
